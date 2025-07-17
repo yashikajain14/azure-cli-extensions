@@ -49,6 +49,7 @@ class ArizeAiScenario(ScenarioTest):
                      self.check('name', '{name}'),
                  ])
         
+        # Delete ArizeAi Organization
         self.cmd('az arize-ai observability-eval organization delete --resource-group {resource_group} --organizationname {name} -y',
                  checks=[])
 
